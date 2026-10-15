@@ -43,6 +43,21 @@ main {
   justify-content: center;
 }
 
+.construction {
+  display: block;
+  width: 70vw;
+  max-width: 16rem;
+  height: auto;
+  margin: 0 0 1.25rem;
+}
+
+@media (min-width: 48rem) {
+  .construction {
+    width: 36vw;
+    max-width: 24rem;
+  }
+}
+
 main p {
   margin: 0;
 }
