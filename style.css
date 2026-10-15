@@ -130,3 +130,65 @@ main {
 main p {
   margin: 0;
 }
+
+.site-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 1.25rem 1rem 1.75rem;
+  text-align: center;
+}
+
+.footer-email {
+  max-width: 100%;
+  color: inherit;
+  font-size: 0.9375rem;
+  overflow-wrap: anywhere;
+  text-decoration: none;
+}
+
+.footer-email:hover {
+  text-decoration: underline;
+}
+
+.footer-email:focus-visible,
+.social-link:focus-visible {
+  outline: 2px solid #111;
+  outline-offset: 3px;
+  border-radius: 0.2rem;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social-link {
+  display: inline-flex;
+  color: #111;
+  line-height: 0;
+  transition: color 0.15s ease;
+}
+
+.social-link svg {
+  display: block;
+  width: 1.75rem;
+  height: 1.75rem;
+  fill: currentColor;
+}
+
+.social-link--instagram:hover,
+.social-link--instagram:focus-visible {
+  color: #e4405f;
+}
+
+.social-link--youtube:hover,
+.social-link--youtube:focus-visible {
+  color: #ff0000;
+}
