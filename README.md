@@ -14,6 +14,10 @@ Placeholder site for [constitucionalismo-feminista.com](https://constitucionalis
 
 If the browser language starts with `pt`, a first visit to `/` or any visit to `/-/` goes to `/br/`. If it starts with `es`, it goes to `/es/`. Any other language goes to `/en/`. After a locale page has loaded, `/` keeps that locale. Without JavaScript, `/` and `/-/` list all three links.
 
+## Outbound links
+
+External links pick up `utm_source=constitucionalismo-feminista.com` in the browser (`utm.js`). Put the plain URL in the HTML. Links on `cnpq.br`, including Lattes (`lattes.cnpq.br`), stay unchanged: a tracking parameter breaks those addresses. Same-site links, `mailto:`, and `tel:` stay unchanged too.
+
 ## Preview
 
 Paths are rooted at the site (`/br/`, `/es/`, `/en/`), so open the folder with a static server from the repository root:
