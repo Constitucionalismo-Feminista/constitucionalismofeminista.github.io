@@ -7,18 +7,47 @@ body {
 body {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   background: #fff;
   color: #000;
   font-family: sans-serif;
 }
 
-p {
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: #fff;
+  padding: 0.75rem 1rem;
+}
+
+.logo {
+  display: inline-block;
+  max-width: 100%;
+  line-height: 0;
+}
+
+.logo img {
+  display: block;
+  height: 3rem;
+  width: auto;
+  max-width: calc(100vw - 2rem);
+  object-fit: contain;
+  object-position: left center;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main p {
   margin: 0;
 }
 
-a {
+main a {
   margin-top: 1rem;
   color: inherit;
 }
